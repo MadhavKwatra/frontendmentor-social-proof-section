@@ -55,18 +55,11 @@ body {
           margin-bottom: 1em;
         }
         padding: 1em;
-        // A PROBLEM
-        // Doing with background ,b ut couldn't
         .stars {
           margin-bottom: 0.5em;
           img {
             margin: 0.1em;
           }
-          //   width: 50%;
-          //   height: 20px;
-          //   background: repeat-x url("../images/icon-star.svg");
-          //   //   background: no-repeat url("../../media/examples/lizard.png");
-          //   background-size: contain;
         }
         h3 {
           color: $very-dark-magenta;
