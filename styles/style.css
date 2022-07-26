@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  background: left top no-repeat url(../images/bg-pattern-top-mobile.svg), right bottom no-repeat url(../images/bg-pattern-bottom-mobile.svg);
+}
+
+.container {
+  margin: 4em 1.5em;
+}
+.container .hero-section {
+  display: flex;
+  flex-direction: column;
+}
+.container .hero-section .info {
+  text-align: center;
+}
+.container .hero-section .info h1 {
+  color: hsl(300deg, 43%, 22%);
+  font-weight: 700;
+  padding: 0 2em;
+}
+.container .hero-section .info p {
+  color: hsl(303deg, 10%, 53%);
+  margin-top: 1em;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.container .hero-section .reviews {
+  margin: 2.5em 0;
+}
+.container .hero-section .reviews .review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(300deg, 24%, 96%);
+  border-radius: 0.5em;
+  padding: 1em;
+}
+.container .hero-section .reviews .review:not(.review:last-child) {
+  margin-bottom: 1em;
+}
+.container .hero-section .reviews .review .stars {
+  margin-bottom: 0.5em;
+}
+.container .hero-section .reviews .review .stars img {
+  margin: 0.1em;
+}
+.container .hero-section .reviews .review h3 {
+  color: hsl(300deg, 43%, 22%);
+}
+
+.review-cards {
+  display: flex;
+  flex-direction: column;
+}
+.review-cards .card {
+  background-color: hsl(300deg, 43%, 22%);
+  padding: 2.2em;
+  border-radius: 0.5em;
+  margin: 1em 0;
+}
+.review-cards .card .card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.8em;
+}
+.review-cards .card .card-header .avatar {
+  border-radius: 50%;
+  width: 2.7em;
+  margin-right: 2em;
+}
+.review-cards .card .card-header .user-info .user-name {
+  color: hsl(0deg, 0%, 100%);
+  padding-bottom: 0.2em;
+}
+.review-cards .card .card-header .user-info p {
+  color: hsl(333deg, 80%, 67%);
+}
+.review-cards .card p.card-quote {
+  color: hsl(0deg, 0%, 100%);
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+  padding: 1em;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    background: left top no-repeat url(../images/bg-pattern-top-desktop.svg), right bottom no-repeat url(../images/bg-pattern-bottom-desktop.svg);
+  }
+  .container {
+    margin: 8em 10em;
+  }
+  .container .hero-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container .hero-section .info {
+    width: 25em;
+    text-align: left;
+  }
+  .container .hero-section .info h1 {
+    padding: 0;
+    padding-right: 1em;
+    font-size: 3rem;
+  }
+  .container .hero-section .info p {
+    font-size: 1.2rem;
+  }
+  .container .hero-section .reviews {
+    margin-left: 7em;
+  }
+  .container .hero-section .reviews .review {
+    flex-direction: row;
+    padding-left: 2em;
+    width: 28em;
+  }
+  .container .hero-section .reviews .review h3 {
+    margin-left: 1em;
+  }
+  .container .hero-section .reviews .review .stars {
+    margin-bottom: 0;
+  }
+  .container .hero-section .reviews .review:nth-child(2) {
+    margin-left: 5em;
+  }
+  .container .hero-section .reviews .review:last-child {
+    margin-left: 10em;
+  }
+  .review-cards {
+    flex-direction: row;
+  }
+  .review-cards .card {
+    height: 15em;
+  }
+  .review-cards .card:not(.card:last-child) {
+    margin-right: 2em;
+  }
+  .review-cards .card:nth-child(2) {
+    margin-top: 2em;
+  }
+  .review-cards .card:last-child {
+    margin-top: 3em;
+  }
+}/*# sourceMappingURL=style.css.map */
